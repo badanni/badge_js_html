@@ -1,13 +1,9 @@
-function myCard_more(e) {
-  var win = window.open();
-  win.document.write(e);
-}
 (function(){
   const font_size_text="10px";  
   var elements = document.getElementsByClassName("cert_badge");
     for(var i = 0; i < elements.length; i++) {
       const cert_canvas = elements[i];
-      cert_canvas.setAttribute('style','display: inline-block; background-color: white; border-radius: 5px;');
+      cert_canvas.setAttribute('style','display: inline-block; background-color: rgb(255,255,255,0.8); border-radius: 5px;');
       cert_canvas.setAttribute('scrolling','no');
       let cert_name =cert_canvas.getAttribute('cert_name').toUpperCase();
       if(cert_name.length > 80){
